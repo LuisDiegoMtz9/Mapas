@@ -1,0 +1,151 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.Mapas"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Mapas\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Mapas\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->C:\Mapas\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Mapas\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Mapas\app\src\main\AndroidManifest.xml:6:5-78
+12-->C:\Mapas\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Mapas\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Mapas\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Mapas\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Mapas\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Mapas\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Mapas\app\src\main\AndroidManifest.xml:9:22-76
+16
+17    <supports-screens
+17-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:9:5-12:40
+18        android:anyDensity="true"
+18-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:10:9-34
+19        android:largeScreens="true"
+19-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:11:9-36
+20        android:normalScreens="true" />
+20-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:12:9-37
+21
+22    <uses-feature
+22-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:14:5-16:36
+23        android:name="android.hardware.location.network"
+23-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:15:9-57
+24        android:required="false" />
+24-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:16:9-33
+25    <uses-feature
+25-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:17:5-19:36
+26        android:name="android.hardware.location.gps"
+26-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:18:9-53
+27        android:required="false" />
+27-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:19:9-33
+28    <uses-feature
+28-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:20:5-22:36
+29        android:name="android.hardware.telephony"
+29-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:21:9-50
+30        android:required="false" />
+30-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:22:9-33
+31    <uses-feature
+31-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:23:5-25:36
+32        android:name="android.hardware.wifi"
+32-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:24:9-45
+33        android:required="false" />
+33-->[org.osmdroid:osmdroid-android:6.1.16] C:\Users\Luis\.gradle\caches\transforms-3\42d7dca0ec1766f1736641702fd24bd1\transformed\osmdroid-android-6.1.16\AndroidManifest.xml:25:9-33
+34
+35    <permission
+35-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+36        android:name="com.example.Mapas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.example.Mapas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+40
+41    <application
+41-->C:\Mapas\app\src\main\AndroidManifest.xml:10:5-30:19
+42        android:allowBackup="true"
+42-->C:\Mapas\app\src\main\AndroidManifest.xml:11:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.9.0] C:\Users\Luis\.gradle\caches\transforms-3\1abb5cd11afee5d13961a9bdaabfec71\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+44        android:dataExtractionRules="@xml/data_extraction_rules"
+44-->C:\Mapas\app\src\main\AndroidManifest.xml:12:9-65
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:fullBackupContent="@xml/backup_rules"
+47-->C:\Mapas\app\src\main\AndroidManifest.xml:13:9-54
+48        android:icon="@mipmap/ic_launcher_round"
+48-->C:\Mapas\app\src\main\AndroidManifest.xml:14:9-49
+49        android:label="Mapas"
+49-->C:\Mapas\app\src\main\AndroidManifest.xml:15:9-30
+50        android:supportsRtl="true"
+50-->C:\Mapas\app\src\main\AndroidManifest.xml:16:9-35
+51        android:testOnly="true"
+52        android:theme="@style/Theme.Mapas" >
+52-->C:\Mapas\app\src\main\AndroidManifest.xml:17:9-43
+53        <activity
+53-->C:\Mapas\app\src\main\AndroidManifest.xml:21:9-29:20
+54            android:name="com.example.Mapas.MainActivity"
+54-->C:\Mapas\app\src\main\AndroidManifest.xml:22:13-41
+55            android:exported="true" >
+55-->C:\Mapas\app\src\main\AndroidManifest.xml:23:13-36
+56            <intent-filter>
+56-->C:\Mapas\app\src\main\AndroidManifest.xml:24:13-28:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Mapas\app\src\main\AndroidManifest.xml:25:17-69
+57-->C:\Mapas\app\src\main\AndroidManifest.xml:25:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Mapas\app\src\main\AndroidManifest.xml:27:17-77
+59-->C:\Mapas\app\src\main\AndroidManifest.xml:27:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Luis\.gradle\caches\transforms-3\24a9366c51e5ff2c99be5fc13ec88e98\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Luis\.gradle\caches\transforms-3\24a9366c51e5ff2c99be5fc13ec88e98\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Luis\.gradle\caches\transforms-3\24a9366c51e5ff2c99be5fc13ec88e98\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Luis\.gradle\caches\transforms-3\24a9366c51e5ff2c99be5fc13ec88e98\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+66
+67        <meta-data
+67-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Luis\.gradle\caches\transforms-3\4d168e8790ec608b2c76b0901519c0f5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+68            android:name="com.google.android.gms.version"
+68-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Luis\.gradle\caches\transforms-3\4d168e8790ec608b2c76b0901519c0f5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+69            android:value="@integer/google_play_services_version" />
+69-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Luis\.gradle\caches\transforms-3\4d168e8790ec608b2c76b0901519c0f5\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+70
+71        <provider
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+72            android:name="androidx.startup.InitializationProvider"
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+73            android:authorities="com.example.Mapas.androidx-startup"
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+74            android:exported="false" >
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+75            <meta-data
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+77                android:value="androidx.startup" />
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Luis\.gradle\caches\transforms-3\9eb1ce56e4e3d6ce258a87634186b428\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+78            <meta-data
+78-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Luis\.gradle\caches\transforms-3\0d7553ee90aa5175a14ca0daaaec689e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Luis\.gradle\caches\transforms-3\0d7553ee90aa5175a14ca0daaaec689e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+80                android:value="androidx.startup" />
+80-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Luis\.gradle\caches\transforms-3\0d7553ee90aa5175a14ca0daaaec689e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+81        </provider>
+82    </application>
+83
+84</manifest>
